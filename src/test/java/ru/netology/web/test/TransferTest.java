@@ -44,18 +44,5 @@ public class TransferTest {
                         () -> assertEquals(secondCardBalance + amount, updatedSecondCardBalance, "Баланс второй карты неверен")
                 );
             }
-
-//            @Test
-//            void shouldNotAllowTransferMoreThanBalance() {
-//                int invalidAmount = DataHelper.makeInvalidAmount(firstCardBalance);
-//                var transferPage = dashboardPage.chooseCardForTransfer(secondCardData);
-//                transferPage.makeTransfer(String.valueOf(invalidAmount), firstCardData);
-//
-//                transferPage.findErrorNotifText("Ошибка! Недостаточно средств на карте.");
-//
-//                assertAll(
-//                        () -> assertEquals(firstCardBalance, dashboardPage.getBalance(firstCardData), "Баланс первой карты изменился"),
-//                        () -> assertEquals(secondCardBalance, dashboardPage.getBalance(secondCardData), "Баланс второй карты изменился")
-//                );
-            }
+}
 
